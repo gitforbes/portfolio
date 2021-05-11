@@ -1,0 +1,154 @@
+html{
+    margin:0;
+}
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-family: 'Freckle Face', cursive;
+    font-size: 5em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h2, h3, h4, h6{
+    font-family: 'Zen Dots', cursive;
+}
+
+h2{
+    font-size: 3em;
+}
+
+section .container-fluid{
+    padding: 5rem;
+}
+
+/*NAVIGATION*/
+
+.navbar-brand{
+    margin-left: 1rem;
+    font-family: 'Freckle Face', cursive;
+    font-size: 1.5rem;
+}
+
+.navbar-dark{
+    background-color: #011;
+}
+
+.nav a{
+    /*margin-right: 1em;*/
+    /*font-family: 'Zen Dots', cursive;*/
+    /*font-weight: bold;*/
+    /*font-size: 1.25em;*/
+    /*color: #fff;*/
+    /*text-decoration: none;*/
+}
+
+/*TITLE*/
+#title .container-fluid{
+    padding: 0;
+    background-color: #08140B;
+    background-image: url(../img/space-back.jpg);
+    background-position: top 100% center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    text-align: center;
+    vertical-align: middle;
+    padding: 100px 50px;
+    color: #fff;
+    width: 100%;
+}
+
+.main h1{
+    margin-top: 200px;
+    margin-bottom: 0;
+    text-shadow: #111 2px 2px;
+}
+
+.main h3{
+    padding-bottom: 300px;
+    text-shadow: #111 2px 2px;
+}
+
+/*ABOUT*/
+#about{
+    text-align: center;
+    margin: 3rem auto;
+}
+
+#about img{
+    width: 275px;
+    height: 250px;
+    border-radius: 100%;
+    margin: auto auto 2rem;
+}
+
+#about h2{
+    padding-bottom: 2rem;
+}
+
+/*SKILLS*/
+
+#skills{
+    background-color: #6cf;
+    background-image: url(../img/blue-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 3rem auto;
+}
+
+#skills h2{
+    padding-top: 3rem;
+}
+
+#skills .row{
+    width: 75%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height:  2;
+}
+
+.skill{
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+.skill i{
+    padding: 17%;
+    margin-top: 2%;
+}
+
+.skill-one{
+    background-color: #6cf;
+    color: #fff;
+}
+
+.skill-two{
+    background-color: #6cf;
+    color: #fff;
+}
+
+.skill-three{
+    background-color: #6cf;
+    color: #fff;
+}
+
+/*BOTTOM*/
+.bottom-container{
+    margin: 0 20px;
+}
+
+.bottom-container p{
+    font-family: 'Zen Dots', cursive;
+}
