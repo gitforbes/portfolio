@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Raleway:wght@400;800&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Raleway:wght@400;800&family=Goldman&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7ca885e93b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <section id="title">
     <div class="container-fluid">
+
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <nav id="portfolio-nav" class="navbar navbar-expand-sm navbar-dark fixed-top">
             <a class="navbar-brand">foundin.space</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
@@ -25,14 +26,17 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#site">Site</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
+
+        <!--TITLE SPLASH-->
         <div class="main" id="#splash">
             <header >
             <h1>When all seems lost...</h1>
-            <h3>Get developing.</h3>
+            <h3>Get a developer.</h3>
             </header>
         </div>
     </div>
@@ -41,7 +45,7 @@
 
 
 <section id="about">
-    <div class="profile container-fluid">
+    <div id="profile" class="container-fluid">
         <div class="row">
         <img src="img/head.png" alt="profile-image">
         </div>
@@ -69,10 +73,10 @@
                     </div>
                     <h3>Front-End</h3>
                     <ul>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>SASS</li>
+                        <li> <a class="nav-link"> JavaScript <i class="fab fa-js-square"></i></a></li>
+                        <li> <a class="nav-link">CSS <i class="fab fa-css3"></i></a></li>
+                        <li> <a class="nav-link">HTML <i class="fab fa-html5"></i></a></li>
+                        <li> <a class="nav-link">SASS <i class="fab fa-sass"></i></a></li>
                     </ul>
                 </div>
                 <div class="col col-md-4">
@@ -81,11 +85,11 @@
                     </div>
                     <h3>Back-End</h3>
                     <ul>
-                        <li>C#</li>
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>MySQL</li>
-                        <li>REST</li>
+                        <li><a class="nav-link">C# <i class="fab fa-windows"></i></a></li>
+                        <li><a class="nav-link">PHP <i class="fab fa-php"></i></a></li>
+                        <li><a class="nav-link">Java <i class="fab fa-java"></i></a></li>
+                        <li><a class="nav-link">MySQL <i class="fas fa-database"></i></a></li>
+                        <li><a class="nav-link">REST <i class="fas fa-cloud"></i></a></li>
                     </ul>
                 </div>
                 <div class="col col-md-4">
@@ -94,11 +98,11 @@
                     </div>
                     <h3>Frameworks</h3>
                     <ul>
-                        <li>Bootstrap</li>
-                        <li>Tailwind</li>
-                        <li>AngularJS</li>
-                        <li>KnockoutJS</li>
-                        <li>jQuery</li>
+                        <li><a class="nav-link">Bootstrap <i class="fab fa-bootstrap"></i></a></li>
+                        <li><a class="nav-link">AngularJS <i class="fab fa-angular"></i></a></li>
+                        <li><a class="nav-link">KnockoutJS <i class="fas fa-desktop"></i></a></li>
+                        <li><a class="nav-link">jQuery <i class="fas fa-file-code"></i></a></li>
+                        <li><a class="nav-link">Tailwind <i class="fas fa-wind"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -106,10 +110,59 @@
 
 </section>
 
+<!--SITE SECTION-->
+
+<section id="site">
+    <div class="container-fluid">
+        <h2>About this Site.</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://getbootstrap.com"> <img class="bootstrap-img" src="img/bootstrap.svg" alt="bootstrap-logo" /></a>
+            </div>
+            <div class="col-md-8 float-md-end">
+                <p>
+                    This site was built on top of a Bootstrap framework. This framework gives the site some basic
+                    responsiveness to different screen sizes and offers a basic CSS and JavaScript toolkit to draw
+                    from when building the site. I chose Bootstrap because it is quick to implement, I have used it
+                    many times, and I know it works well across browsers and devices.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 float-md-end">
+                <p>
+                    The custom stylesheet for this site was built using SASS. SASS allows for CSS customization
+                    using inheritance, variable declaration, and a fair amount of encapsulation. This not only
+                    saves time on me as a developer, it saves on technical debt as the code grows. With SASS
+                    (, PHPStorm, and Node.js) I can even minify my CSS files as I debug my stylesheet.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="http://sass-lang.com"> <img class="sass-img" src="img/sass.png" alt="sass-logo" /></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://github.com"> <img class="github-img" src="img/octocat.jpg" alt="github-logo" /></a>
+            </div>
+            <div class="col-md-8 float-md-end">
+                <p>
+                    Finally, this site was held together by a not-so-complex sequence of pushes and pulls (and
+                    commits). GitHub kept my work backed up and allowed me to transition this site from my laptop
+                    to Amazon Web Services. Plus, GitHub allows my work to be open source so that maybe other developers
+                    can learn from this site the same way I have learned from so many of the web sites that came before
+                    this one.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
 <section id="contact">
     <div class="container-fluid">
-        <h2>Get In Touch</h2>
+        <h2>Don't be a Stranger.</h2>
         <h3>Lorem ipsum dolor sit amet, non elit.</h3>
         <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
         <a class="btn" href="mailto:irainforest@icloud.com">CONTACT ME</a>
@@ -118,9 +171,9 @@
 </section>
 
 <section id="footer">
-    <a class="footer-link" href="https://www.github.com/gitforbes"><i class="fab fa-github"></i></a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    <!--a class="footer-link" href="https://www.github.com/gitforbes"><i class="fab fa-github"></i></a>
+    <a class="footer-link" href="https://stackoverflow.com/story/devforbes"><i class="fab fa-stack-overflow"></i></a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a-->
     <p>© 2021 Ryan Forbes.</p>
 </section>
 

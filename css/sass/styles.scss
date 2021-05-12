@@ -1,0 +1,233 @@
+//FONTS
+$title-font: 'Freckle Face', cursive;
+$body-font: 'Raleway', sans-serif;
+$header-font: 'Goldman', cursive;;
+
+//COLORS
+$white: #fff;
+$navbar-black: #011;
+$title-bgcolor: #08140B;
+$skill-orange: #ffa600;
+$skill-blue: #6cf;
+$skill-bgcolor: #6cf;
+
+//EXTENSIONS
+%text-shadow{
+  text-shadow: $navbar-black 2px 2px;
+}
+
+%space-bg{
+  background-color: $title-bgcolor;
+  background-image: url(../img/space-back.jpg);
+  background-position: top 100% center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $white;
+  @extend %text-shadow;
+}
+
+
+//WHOLE PAGE FORMATS
+
+html{
+  margin:0;
+}
+body{
+  margin: 0;
+  font-family: $body-font;
+}
+
+h1{
+  font-family: $title-font;
+  font-size: 6em;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+h2, h3, h4, h6{
+  font-family: $header-font;
+}
+
+h2{
+  font-size: 3em;
+}
+
+section .container-fluid{
+  padding: 5rem;
+}
+
+
+//NAVIGATION
+
+.navbar-brand{
+  margin-left: 1rem;
+  font-family: $title-font;
+  font-size: 1.5rem;
+}
+
+.navbar-dark{
+  background-color: $navbar-black;
+}
+
+
+//TITLE SECTION
+
+#title {
+  .container-fluid {
+    padding: 0;
+    @extend %space-bg;
+  }
+
+  .main {
+    text-align: center;
+    vertical-align: middle;
+    padding: 100px 50px;
+    width: 100%;
+
+    h1 {
+      margin-top: 200px;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      padding-bottom: 300px;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+
+  //ABOUT SECTION
+
+  #about {
+    text-align: center;
+    margin: 3rem auto;
+
+    img {
+      width: 275px;
+      height: 250px;
+      border-radius: 100%;
+      margin: auto auto 2rem;
+    }
+
+    h2 {
+      padding-bottom: 2rem;
+    }
+  }
+
+
+  //SKILLS SECTION
+
+  #skills {
+    background-color: $skill-bgcolor;
+    background-image: url(../img/sky.jpg);
+    background-position: center bottom 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 3rem auto;
+    color: $white;
+    @extend %text-shadow;
+
+    h2 {
+      padding: 3rem 0;
+      text-shadow: $skill-blue 2px 2px;
+    }
+
+    h3 {
+      padding-top: 10%;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .skill {
+      border-radius: 100%;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      text-align: center;
+
+      i {
+        padding: 17%;
+        margin-top: 2%;
+        text-align: center;
+        vertical-align: bottom;
+      }
+    }
+
+    .skill-one, .skill-three {
+      background-color: $skill-orange;
+    }
+
+    .skill-two {
+      background-color: $skill-blue;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        text-align: center;
+        line-height: 2.5rem;
+        margin: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        a{
+          color: $white;
+        }
+        a:hover{
+          color: $skill-blue;
+        }
+      }
+    }
+
+    .skill-two + h3 + ul li a:hover{
+      color: $skill-orange;
+    }
+  }
+
+
+  //SITE SECTION
+
+#site{
+  div.row div{
+    text-align: center;
+  }
+  img{
+    width: 220px;
+    height: 200px;
+    padding: 10%;
+    margin: auto;
+  }
+  p{
+    vertical-align: middle;
+    margin-top: 30px;
+    text-align: left;
+  }
+}
+
+//CONTACT
+
+#contact{
+  @extend %space-bg;
+  display: none;
+}
+
+  //FOOTER
+  #footer {
+    background-color: $title-bgcolor;
+    color: $white;
+    padding: 20px 20px 1px;
+
+    p {
+      font-family: $header-font;
+    }
+  }
+

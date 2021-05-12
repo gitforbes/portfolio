@@ -1,5 +1,4 @@
 // FADE ON SCROLL
-let header = document.getElementById('#splash');
 
 function fadeOutOnScroll(element) {
     if (!element) {
@@ -22,7 +21,8 @@ function fadeOutOnScroll(element) {
 }
 
 function scrollHandler() {
-    fadeOutOnScroll(header);
+    fadeOutOnScroll(document.getElementById('#splash'));
+    fadeOutOnScroll(document.getElementById('#profile'));
 }
 
 window.addEventListener('scroll', scrollHandler);
