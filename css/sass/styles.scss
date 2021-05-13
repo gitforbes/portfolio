@@ -92,6 +92,12 @@ section .container-fluid{
       margin-top: 200px;
       margin-bottom: 0;
     }
+    @media only screen and (max-width: 600px) {
+      h1{
+        margin-top: 100px;
+        font-size: 4em;
+      }
+    }
 
     h3 {
       padding-bottom: 300px;
@@ -150,6 +156,7 @@ section .container-fluid{
       height: 200px;
       margin: auto;
       text-align: center;
+      background-color: $skill-orange;
 
       i {
         padding: 17%;
@@ -159,11 +166,7 @@ section .container-fluid{
       }
     }
 
-    .skill-one, .skill-three {
-      background-color: $skill-orange;
-    }
-
-    .skill-two {
+    .highlight{
       background-color: $skill-blue;
     }
 

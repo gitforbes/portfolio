@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Raleway:wght@400;800&family=Goldman&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7ca885e93b.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -65,44 +66,15 @@
 
 <section id="skills">
         <div class="container-fluid">
-            <div class="row">
-                <h2>My Skills.</h2>
+            <h2>My Skills.</h2>
+            <div class="row" data-bind="foreach: skillTypes">
                 <div class="col col-md-4">
-                    <div class="skill skill-one">
-                        <i class="fas fa-pencil-ruler fa-7x"></i>
+                    <div class="skill" data-bind="css: { highlight: $index() % 2 }">
+                        <i data-bind="class: typeClass"></i>
                     </div>
-                    <h3>Front-End</h3>
-                    <ul>
-                        <li> <a class="nav-link"> JavaScript <i class="fab fa-js-square"></i></a></li>
-                        <li> <a class="nav-link">CSS <i class="fab fa-css3"></i></a></li>
-                        <li> <a class="nav-link">HTML <i class="fab fa-html5"></i></a></li>
-                        <li> <a class="nav-link">SASS <i class="fab fa-sass"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col col-md-4">
-                    <div class="skill skill-two">
-                        <i class="fas fa-code fa-7x"></i>
-                    </div>
-                    <h3>Back-End</h3>
-                    <ul>
-                        <li><a class="nav-link">C# <i class="fab fa-windows"></i></a></li>
-                        <li><a class="nav-link">PHP <i class="fab fa-php"></i></a></li>
-                        <li><a class="nav-link">Java <i class="fab fa-java"></i></a></li>
-                        <li><a class="nav-link">MySQL <i class="fas fa-database"></i></a></li>
-                        <li><a class="nav-link">REST <i class="fas fa-cloud"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col col-md-4">
-                    <div class="skill skill-three">
-                        <i class="fas fa-tools fa-7x"></i>
-                    </div>
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li><a class="nav-link">Bootstrap <i class="fab fa-bootstrap"></i></a></li>
-                        <li><a class="nav-link">AngularJS <i class="fab fa-angular"></i></a></li>
-                        <li><a class="nav-link">KnockoutJS <i class="fas fa-desktop"></i></a></li>
-                        <li><a class="nav-link">jQuery <i class="fas fa-file-code"></i></a></li>
-                        <li><a class="nav-link">Tailwind <i class="fas fa-wind"></i></a></li>
+                    <h3 data-bind="text: typeName"></h3>
+                    <ul data-bind="foreach: $parent.getSkillsByType($index())">
+                        <li> <a class="nav-link"><span data-bind="text: name"></span>  <i data-bind="class: skillClass"></i> </a></li>
                     </ul>
                 </div>
             </div>
@@ -149,7 +121,7 @@
                 <p>
                     Finally, this site was held together by a not-so-complex sequence of pushes and pulls (and
                     commits). GitHub kept my work backed up and allowed me to transition this site from my laptop
-                    to Amazon Web Services. Plus, GitHub allows my work to be open source so that maybe other developers
+                    to Github Pages. Plus, GitHub allows my work to be open source so that maybe other developers
                     can learn from this site the same way I have learned from so many of the web sites that came before
                     this one.
                 </p>
@@ -177,7 +149,9 @@
     <p>© 2021 Ryan Forbes.</p>
 </section>
 
+<script src="js/knockout-3.5.1.js"></script>
 <script src="js/bootstrap/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="js/effects.js"></script>
+<script src="js/skills.js"></script>
 </body>
 </html>
