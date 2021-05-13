@@ -18,23 +18,23 @@
     <div class="container-fluid">
 
         <!-- Nav Bar -->
-        <nav id="portfolio-nav" class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <nav id="portfolioNav" class="navbar navbar-expand-sm navbar-dark fixed-top">
             <a class="navbar-brand">foundin.space</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#site">Site</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-auto"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item ms-auto"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item ms-auto"><a class="nav-link" href="#site">Site</a></li>
+                    <!--li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li-->
                 </ul>
             </div>
         </nav>
 
         <!--TITLE SPLASH-->
-        <div class="main" id="#splash">
+        <div class="main" id="splash">
             <header >
             <h1>When all seems lost...</h1>
             <h3>Get a developer.</h3>
@@ -150,8 +150,8 @@
 </section>
 
 <script src="js/knockout-3.5.1.js"></script>
-<script src="js/bootstrap/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="js/effects.js"></script>
 <script src="js/skills.js"></script>
+<script src="js/bootstrap/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
