@@ -1,0 +1,12 @@
+Copyright (c) 2021 foundin.space
+
+
+This is free software that can viewed and copied freely.
+Hopefully someone can learn from this code.
+
+
+WARNING:
+This code is free to use and is up to the user to use responsibly.
+This site and its developers are not responsible for what others do
+with code.
+Enjoy responsibly.
